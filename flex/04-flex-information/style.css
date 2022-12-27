@@ -5,11 +5,36 @@ body {
 img {
   width: 100px;
   height: 100px;
+  
 }
 
 .title {
   font-size: 36px;
   font-weight: 900;
+  /* didn't have to put display: flex here, could've just centered text */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.image-pic-pair {
+  /* don't need display: flex here, since it is applied in .content */
+  display: flex;
+  /* could have set max-width: 200px, and no flex: wrap needed */
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  gap: 52px;
+  justify-content: space-around;
+}
+
+/* don't need this if, under 'body', you set text-align: center */
+.text {
+  text-align: center;
 }
 
 /* do not edit this footer */
@@ -24,3 +49,4 @@ img {
   justify-content: center;
   background: #eee;
 }
+
